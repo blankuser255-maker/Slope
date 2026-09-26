@@ -6,35 +6,21 @@
     <title>Play My Game</title>
     <style>
         body {
-            background-color: #1a1a1a; 
-            color: #ffffff;            
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             margin: 0;
-            padding-top: 50px;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        .game-container {
+            padding: 0;
             background-color: #000000;
-            border: 4px solid #333333;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+            overflow: hidden; /* Removes scrollbars */
+        }
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            display: block;
         }
     </style>
 </head>
 <body>
-
-    <h1>Play My Game</h1>
-
-    <div class="game-container">
-        <!-- Replace "SECRET" with your actual game link below -->
-        <iframe src="https://staticquasar931.github.io/slope/" width="800" height="600" frameborder="0" allowfullscreen></iframe>
-    </div>
-
+    <!-- Replace "SECRET" with your actual game link below -->
+    <iframe src="https://staticquasar931.github.io/slope/" allowfullscreen></iframe>
 </body>
 </html>
